@@ -1,0 +1,579 @@
+
+body{
+
+    font-family: sans-serif;
+    font-size:15px;
+    line-height:1.5;
+    background-color: white; 
+
+}
+/*for all text and items that arent the background*/
+.container{
+
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+
+}
+.container2{
+
+    width: 100%;
+    margin: auto;
+    overflow:hidden;
+    min-height: 100%;
+    padding-bottom: 15px;
+}
+
+
+/*for the headerbackground and text*/
+header{
+    background:url("images/header.jpg") no-repeat 0px 0px;
+    background-size: 1350px 300px;
+    color: #ecf0f1;
+    padding-top: 0px;
+    min-height: 70px;
+    margin: 0;
+    align-items: center;
+}
+.header2{
+    background:url("images/blue.jpg") no-repeat 0px 0px;
+  
+    background-size: 1350px 300px;
+    color: #ecf0f1;
+    padding-top: 0px;
+    min-height: 50px;
+    margin: 0;
+    align-items: center;
+}
+/*for the logo*/
+.logo {
+    text-align: center;
+    padding-top: 25px;
+
+}
+/*for the heading alignment*/
+h1{
+    padding: none;
+    margin: none;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-family:Lucida;
+}
+/*navbar full length and allignment */
+nav{
+    background: #eeeeee;
+    background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%);
+    background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
+    background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+    padding-top: 0px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding-bottom: 30px;
+}
+nav ul{
+    margin: 0;
+    padding: 20px;
+}
+/* make the items float left in a line */
+nav li {
+
+    float: left;
+    display: inline;
+    margin-left: inherit;
+}
+/*for the individual items of the bar*/
+nav a{
+    color: #0076B6;
+    font-size:18px;
+    padding-right: 100px;
+    padding-left: 100px;
+    text-decoration: none;
+}
+/*change nav bar item when hovered over*/
+nav a:hover{
+    padding-top: 24px;
+    padding-bottom: 23px;
+    font-weight: bold;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: black ;
+    background-color: white;
+    border-radius: 5px;
+    transition: .5s;
+
+}
+/*changes the text based on what page you are on*/
+.current a{
+    color: #00466c;
+    font-weight: bold;
+}
+/*for home page main area and abous us area we can change the about us one once i figure out what im going ot put in their*/
+#slides{
+    min-height: 650px;
+    background:url("images/hospital.jpg") no-repeat -20px -400px;
+    color: white;
+}
+/*creates black tint to the backgrou8nd image so teh text looks better overtop*/
+.overlay{
+    width: 100%;
+    height:100%;
+    min-height: 650px;
+    background: rgba(0, 0, 0, 0.6);
+}
+/*input box sizes*/
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=date]{
+    width: 155px;
+    padding: 10px 10px;
+    height: 25px;
+
+}
+/*login background */
+#patLogin{
+    min-height: 400px;
+    background:url("images/room.jpg") no-repeat -1000px -1000px ;
+    color: white;
+}
+/*the actual login box*/
+.banner {
+    width: 300px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    position:absolute;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%,-50%);
+}
+/*making the enter username area clear*/
+.banner input{
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    outline: none;
+    background: none;
+    color:white;
+
+}
+/*login button formatting*/
+.banner button{
+    background: #0076B6;
+    height: 40px;
+    color: white;
+    outline: none;
+    border: none;
+    display: block;
+    width: 100%;
+}
+.banner a{
+    color: white;
+    text-decoration: none;
+}
+/*footer formatting*/
+.bottom{
+    height: 100px;
+    background-color: #0076B6;
+    padding: none;
+    outline: none;
+    color: white;
+}
+/*contact info formating*/
+.contact{
+    float:right;
+    margin: none;
+    padding: none;
+    transform: translate(0, -55%) 
+}
+
+.contact a{
+    text-decoration: none;
+    color: white;
+}
+
+/*Pat informaton input page*/
+
+.patReg{
+    width:50%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    position:absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%,-30%);
+    color:white;
+
+}
+.patInfo input{
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    outline: none;
+    background: none;
+    color:white;
+}
+.patInfo input{
+    color: white;
+    background: none;
+    border-color: blue;
+
+
+
+}
+
+.patDisp{
+    height: inherit;
+
+}
+aside{
+    float:left;
+    padding-top: 0px;
+    text-align: left;
+    width:20%;
+    height: 100%;
+    margin-right: 25px;
+    border-right: 2px;
+    border-right-style: solid; 
+    border-right-color:    #0076B6;    
+}
+
+aside ul{
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    padding-bottom: 800px;
+}
+/* make the items float left in a line */
+aside li {
+
+    padding-top: 20%;
+}
+/*for the individual items of the bar*/
+aside a{
+    color: #0076B6;
+    font-size: 18px;
+    padding-right: 15px;
+    padding-left: 5px;
+    text-decoration: none;
+}
+/*change nav bar item when hovered over*/
+aside a:hover{
+    font-weight: bold;
+    color: black;
+    /*     background-color: white;*/
+
+}
+/* main div styling for all portal pages  */
+#main{
+    min-width: 69%;
+    max-width: 69%;
+    float: right;
+    clear: left;
+    margin: 10px;
+    padding-left: 10px;
+    display: inline; 
+    min-height: 100%;
+
+}
+
+/* main div styling for all portal pages.*/
+#main h3{
+    text-align: left;
+    margin-left: 15px;
+}
+
+
+#patBack{
+    background: white;
+    min-height: 100%;
+
+}
+.patDisp li{
+    padding-top: 15px;
+    padding-bottom: 15px;
+   
+     border-bottom:  1px;
+     border-bottom-style: solid;
+    border-bottom-color: #0076B6;
+   
+    list-style: none;
+   
+}
+
+/* Greetings on both the patient & staff portal nav bars */
+.greeting{
+    float: left;
+    color: black;
+    vertical-align: central;
+    text-align: left;
+    font-weight: 700;
+}
+
+/* Dark red gradient log out buttons with white text for all portal pages.*/
+.logoutButton{
+    color: white;
+    text-align: center;
+    padding: 8px;
+    vertical-align: central;
+    background: #a90329;
+    background: -moz-linear-gradient(top,  #a90329 0%, #8f0222 44%, #6d0019 100%);
+    background: -webkit-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%);
+    background: linear-gradient(to bottom,  #a90329 0%,#8f0222 44%,#6d0019 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 );
+    border-color: white;
+    float: right;
+    margin-right: -400px;
+
+}
+
+.retButton{   
+    background: rgb(0,91,182);
+    background: -moz-linear-gradient(top,  rgba(0,91,182,1) 0%, rgba(7,83,159,1) 44%, rgba(12,72,132,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(0,91,182,1) 0%,rgba(7,83,159,1) 44%,rgba(12,72,132,1) 100%);
+    background: linear-gradient(to bottom,  rgba(0,91,182,1) 0%,rgba(7,83,159,1) 44%,rgba(12,72,132,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005bb6', endColorstr='#0c4884',GradientType=0 );
+    color: white;
+    padding: 8px;
+    border-color: white;
+    margin-top: 15px;
+    margin-left: 30px;
+
+}
+
+
+
+.portalNav li{
+
+
+    display: inline;
+    margin-left: inherit;
+    width: 33.33%;
+
+
+}
+
+/*Staff aside search bar section. Blue gradient.*/
+/*Gradient generated on https://www.colorzilla.com/gradient-editor/*/
+.staff{
+
+    float:left;
+    text-align: left;
+    width:15%;
+    min-height: 100%;
+    margin-right: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    background: #deefff;
+    background: -moz-linear-gradient(top,  #deefff 0%, #98bede 100%);
+    background: -webkit-linear-gradient(top,  #deefff 0%,#98bede 100%);
+    background: linear-gradient(to bottom,  #deefff 0%,#98bede 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#deefff', endColorstr='#98bede',GradientType=0 );
+
+}
+
+.staff p{
+    text-align: center;
+    font-weight: bolder;
+
+}
+.staff ul{
+    text-align: center;
+    text-align-last: center;
+
+}
+
+.staff a{
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+
+.staff li>a:hover{
+    text-decoration: none;
+    font-size: 14px;
+    color: #8f0222;
+    font-weight: normal;
+}
+
+.info h3{
+    color: #015785;
+}
+
+.info h2{
+    color:#015785;
+    text-decoration: underline;
+}
+
+.info {
+   
+}
+.staff label{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+/* Nav bars for both patient and staff portals with pewter gray gradients. */
+/*Gradient generated on https://www.colorzilla.com/gradient-editor/*/
+.portalNav{
+    background: #eeeeee;
+    background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%);
+    background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
+    background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+
+}
+
+
+/* patient facesheet info in table format with medium denim blue borders*/
+.patFS{
+    border: #0076B6 solid 2px;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+/* patient facesheet info in table format with medium denim blue borders*/
+.patFS td{
+    border: #0076B6 solid 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: left;
+}
+
+/* patient facesheet label medium denim blue*/
+.patFS label{
+    color: #0076B6;
+    font-weight: bolder;
+}
+
+/* care note textarea w/scroll*/
+#careNote{
+    overflow-y: scroll;
+    height: 100px;
+    resize: none;
+}
+/*label for care note field is dark red. */
+#cNLabel{
+    color: #a90329;
+    font-weight: bolder;
+}
+
+.queryRes2{
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 25%;
+    clear: right;
+    float: right;
+}
+
+
+.queryRes2 a{
+    color: #1564b9;
+
+}
+
+.queryRes1{
+    width: 75%;
+    min-height: 100%;
+
+}
+/* Staff choices menu on staffPortal.php  */
+#staffChoices td{
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+
+}
+
+/* Dark blue ridged border and pale blue-gray background for staff choices menu on staffPortal.php*/
+#staffChoices{
+    border: 3px #00466c ridge;
+    background: #eeeeee;            
+
+}
+/* Dark red bolder text to emphasize warning. */
+.warning{
+    color: #a90329;
+    font-weight: bolder;
+}
+
+.error{
+
+    text-align: center;
+}
+
+#errorpic{
+
+    margin-top: 5px;
+}
+
+.view table{
+    float: left;
+    max-width: 50%;
+    min-width: 50%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.view p{
+    text-align: left;
+    font-weight: bolder;
+    
+}
+
+.view label{
+    font-weight: bolder;
+}
+.view caption, h4{
+    text-align: left;
+    text-decoration: underline;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    color:#0076B6;
+}
+
+
+
+#medTable th,td{
+
+    text-align: left;
+    /*    padding-left: 10px;*/
+    padding-right: 10px;
+
+
+}
+
+.portalButton{
+    background: rgb(0,91,182);
+    background: -moz-linear-gradient(top,  rgba(0,91,182,1) 0%, rgba(7,83,159,1) 44%, rgba(12,72,132,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(0,91,182,1) 0%,rgba(7,83,159,1) 44%,rgba(12,72,132,1) 100%);
+    background: linear-gradient(to bottom,  rgba(0,91,182,1) 0%,rgba(7,83,159,1) 44%,rgba(12,72,132,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005bb6', endColorstr='#0c4884',GradientType=0 );
+    color: white;
+    padding: 8px;
+    border-color: white;
+}
+
+.sideDisplay>li{
+    padding-bottom: 11px;
+    padding-top: 10px;
+    padding-left: 12px;
+    
+    text-align: left;
+    text-align-last: left;
+}
